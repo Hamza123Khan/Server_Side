@@ -1,0 +1,24 @@
+const mongoose  = require('mongoose')
+const express = require('express')
+const app = express()
+
+const busSchema = new mongoose.Schema({
+    arrivalDateTime: {
+         type: Date, 
+         required: true },
+    destinationDateTime: { 
+        type: Date, 
+        required: true },
+    cost: { 
+        type: Number, 
+        required: true },
+    numberOfSeats: { 
+        type: Number, 
+        required: true },
+    totalTimeToDestination: { 
+        type: String, 
+        required: true },
+  });
+  
+  const Bus = mongoose.model('Bus', busSchema);
+  

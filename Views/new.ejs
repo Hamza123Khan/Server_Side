@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form action="/Admin" method="post">
+
+        <label for="arrivalDateTime">Arrival Date and Time:</label>
+    <input type="datetime-local" id="arrivalDateTime" name="arrivalDateTime" required><br>
+
+    <label for="destinationDateTime">Destination Date and Time:</label>
+    <input type="datetime-local" id="destinationDateTime" name="destinationDateTime" required><br>
+
+    <label for="cost">Cost:</label>
+    <input type="number" id="cost" name="cost" required><br>
+
+    <label for="numberOfSeats">Number of Seats:</label>
+    <input type="number" id="numberOfSeats" name="numberOfSeats" required><br>
+
+    <label for="totalTimeToDestination">Total Time to Destination:</label>
+    <input type="text" id="totalTimeToDestination" name="totalTimeToDestination" required><br>
+
+    <button type="button">Submit</button>
+    </form>
+    <p></p>
+</body>
+</html>
